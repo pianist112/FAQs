@@ -1,0 +1,4 @@
+1. Q: try to run a C++11 program in Cygwin but got "Caught exception: locale::facet:_S_create_c_locale name not valid". Why?
+   A: make sure environment variables contain LC_ALL by typing "env". If not, export it:
+            export LC_ALL=C
+      The program should run.

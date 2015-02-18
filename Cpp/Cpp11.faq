@@ -2,3 +2,16 @@
    A: make sure environment variables contain LC_ALL by typing "env". If not, export it:
             export LC_ALL=C
       The program should run.
+      
+2. Q: what is the output of the following code?
+      bool test() {
+         ... /// some code
+         return ...;
+      }
+      
+      if (test)   // forgot to supply '()' to test
+         std::cout << "test result is positive\n";
+      else 
+         std::cout << "test result is negative\n";
+   
+   A: It always output "test result is positive" because test condition is not a result of function test() but 'test'.
